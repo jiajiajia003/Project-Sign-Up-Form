@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card-container {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.card-image {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    vertical-align: baseline;
+    top: 20%;
+    height: 80px;
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    top: 7px;
+}
+
+.card-content > p {
+    display: inline;
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 4em;
+    padding: 0;
+    
+}
+
+.card-container > p {
+    position: relative;
+    color: grey;
+    font-size: small;
+    text-align: center;
+    top: auto;
+    top: 75%;
+}
+
+.partRight {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: rgb(243, 241, 241);
+    --left-space: 20px;
+}
+
+.partTop {
+    margin: 60px 70px 20px var(--left-space);
+}
+
+.partMiddle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: var(--left-space);
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px lightgrey;
+    margin-bottom: 20px;
+}
+
+.partMiddle > p {
+    font-size: large;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    font-size: small;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+#password:invalid,
+#confirmPassword:invalid {
+    border-color: red;
+}
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    gap: 40px;
+}
+
+.partBottom {
+    margin-left: var(--left-space);
+}
+button {
+    background-color: #596D48;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+a {
+    color: #596D48;
+}
